@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="智慧工地" company="" webLink="http://" view-date="2023-10-22" view-index="0" gantt-divider-location="701" resource-divider-location="300" version="2.0" locale="zh_CN">
+    <description/>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="名称" width="31" order="0"/>
+        <field id="tpc0" name="产出" width="19" order="1"/>
+        <field id="tpd6" name="持续" width="11" order="2"/>
+        <field id="tpd4" name="开始日期" width="18" order="3"/>
+        <field id="tpd5" name="结束日期" width="18" order="4"/>
+        <option id="taskLabelLeft" value="name"/>
+        <option id="taskLabelRight" value="coordinator"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="名称" width="50" order="0"/>
+        <field id="1" name="默认角色" width="50" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <calendar id="1" name="default">
+                <default-week sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+                <only-show-weekends value="true"/>
+                <overriden-day-types/>
+                <days/>
+            </calendar>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+            <taskproperty id="tpc0" name="产出" type="custom" valuetype="text"/>
+            <taskproperty id="tpc1" name="资源" type="custom" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="智慧工地" meeting="false" start="2023-10-31" duration="150" complete="0" expand="true">
+            <task id="2" name="规划" color="#000000" meeting="false" start="2023-10-31" duration="30" complete="0" expand="true">
+                <customproperty taskproperty-id="tpc0" value=""/>
+                <task id="11" name="采集数据种类" color="#8cb6ce" meeting="false" start="2023-10-31" duration="6" complete="0" expand="true">
+                    <depend id="13" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="采集数据规格书"/>
+                </task>
+                <task id="13" name="数据可视化方案" color="#8cb6ce" meeting="false" start="2023-11-06" duration="8" complete="0" expand="true">
+                    <depend id="12" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="数据可视化图表"/>
+                </task>
+                <task id="12" name="报告生成规则" color="#8cb6ce" meeting="false" start="2023-11-14" duration="8" complete="0" expand="true">
+                    <depend id="15" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="报告说明书"/>
+                </task>
+                <task id="15" name="警报和通知功能" color="#8cb6ce" meeting="false" start="2023-11-22" duration="8" complete="0" expand="true">
+                    <depend id="108" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="警报通知说明书"/>
+                </task>
+                <task id="108" name="施工进度" color="#8cb6ce" meeting="true" start="2023-11-30" duration="0" complete="0" expand="true">
+                    <depend id="113" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="施工进度表"/>
+                </task>
+            </task>
+            <task id="106" name="研发" meeting="false" start="2023-11-30" duration="90" complete="0" expand="true">
+                <task id="112" name="形象进度管理模块" meeting="false" start="2023-11-30" duration="16" complete="0" expand="true">
+                    <task id="113" name="实时监测施工进度功能" color="#8cb6ce" meeting="false" start="2023-11-30" duration="4" complete="0" expand="true">
+                        <depend id="114" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="实时监测施工进度界面"/>
+                    </task>
+                    <task id="114" name="创建和维护工程进度计划功能" color="#8cb6ce" meeting="false" start="2023-12-04" duration="4" complete="0" expand="true">
+                        <depend id="115" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="创建和维护工程进度计划界面"/>
+                    </task>
+                    <task id="115" name="生成进度报告和可视化图表功能" color="#8cb6ce" meeting="false" start="2023-12-08" duration="4" complete="0" expand="true">
+                        <depend id="116" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="进度报告界面"/>
+                    </task>
+                    <task id="116" name="警报通知功能" color="#8cb6ce" meeting="false" start="2023-12-12" duration="4" complete="0" expand="true">
+                        <depend id="118" type="2" difference="0" hardness="Strong"/>
+                        <depend id="262" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="警报通知界面"/>
+                    </task>
+                </task>
+                <task id="117" name="特种装备监测与作业风险预警模块" meeting="false" start="2023-12-16" duration="16" complete="0" expand="true">
+                    <task id="118" name="特种装备状态和性能监测功能" color="#8cb6ce" meeting="false" start="2023-12-16" duration="4" complete="0" expand="true">
+                        <depend id="119" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="特种装备状态和性能监测界面"/>
+                    </task>
+                    <task id="119" name="实时数据收集功能" color="#8cb6ce" meeting="false" start="2023-12-20" duration="4" complete="0" expand="true">
+                        <depend id="120" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="实时数据收集界面"/>
+                    </task>
+                    <task id="120" name="故障预测与维护计划功能" color="#8cb6ce" meeting="false" start="2023-12-24" duration="4" complete="0" expand="true">
+                        <depend id="121" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="故障预测与维护计划界面"/>
+                    </task>
+                    <task id="121" name="风险和危险情况预警功能" color="#8cb6ce" meeting="false" start="2023-12-28" duration="4" complete="0" expand="true">
+                        <depend id="123" type="2" difference="0" hardness="Strong"/>
+                        <depend id="263" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="风险和危险情况预警界面"/>
+                    </task>
+                </task>
+                <task id="122" name="绿色工地模块" meeting="false" start="2024-01-01" duration="9" complete="0" expand="true">
+                    <task id="123" name="环境参数监测功能" color="#8cb6ce" meeting="false" start="2024-01-01" duration="3" complete="0" expand="true">
+                        <depend id="124" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="环境参数监测界面"/>
+                    </task>
+                    <task id="124" name="环保数据收集与分析功能" color="#8cb6ce" meeting="false" start="2024-01-04" duration="3" complete="0" expand="true">
+                        <depend id="125" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="环保数据收集与分析界面"/>
+                    </task>
+                    <task id="125" name="能源效率优化功能" color="#8cb6ce" meeting="false" start="2024-01-07" duration="3" complete="0" expand="true">
+                        <depend id="127" type="2" difference="0" hardness="Strong"/>
+                        <depend id="264" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="能源效率优化界面"/>
+                    </task>
+                </task>
+                <task id="126" name="安全质量管理模块" meeting="false" start="2024-01-10" duration="19" complete="0" expand="true">
+                    <task id="127" name="实时安全监测功能" color="#8cb6ce" meeting="false" start="2024-01-10" duration="4" complete="0" expand="true">
+                        <depend id="128" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="实时安全监测界面"/>
+                    </task>
+                    <task id="128" name="质量数据收集功能" color="#8cb6ce" meeting="false" start="2024-01-14" duration="5" complete="0" expand="true">
+                        <depend id="129" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="质量数据收集界面"/>
+                    </task>
+                    <task id="129" name="缺陷识别与报告功能" color="#8cb6ce" meeting="false" start="2024-01-19" duration="5" complete="0" expand="true">
+                        <depend id="130" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="缺陷识别与报告界面"/>
+                    </task>
+                    <task id="130" name="自动化质量控制功能" color="#8cb6ce" meeting="false" start="2024-01-24" duration="5" complete="0" expand="true">
+                        <depend id="132" type="2" difference="0" hardness="Strong"/>
+                        <depend id="265" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="自动化质量控制界面"/>
+                    </task>
+                </task>
+                <task id="131" name="工程态势分析模块" meeting="false" start="2024-01-29" duration="14" complete="0" expand="true">
+                    <task id="132" name="工程数据收集功能" color="#8cb6ce" meeting="false" start="2024-01-29" duration="4" complete="0" expand="true">
+                        <depend id="133" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="工程数据收集界面"/>
+                    </task>
+                    <task id="133" name="数据分析工具和算法的应用" color="#8cb6ce" meeting="false" start="2024-02-02" duration="5" complete="0" expand="true">
+                        <depend id="134" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="数据分析工具和算法界面"/>
+                    </task>
+                    <task id="134" name="数据和信息展示功能" color="#8cb6ce" meeting="false" start="2024-02-07" duration="5" complete="0" expand="true">
+                        <depend id="136" type="2" difference="0" hardness="Strong"/>
+                        <depend id="266" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="数据和信息展示界面"/>
+                    </task>
+                </task>
+                <task id="135" name="7*24小时预警处置中心模块" meeting="false" start="2024-02-12" duration="16" complete="0" expand="true">
+                    <task id="136" name="实时监控功能" color="#8cb6ce" meeting="false" start="2024-02-12" duration="4" complete="0" expand="true">
+                        <depend id="137" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="实时监控界面"/>
+                    </task>
+                    <task id="137" name="事件监测和分析功能" color="#8cb6ce" meeting="false" start="2024-02-16" duration="4" complete="0" expand="true">
+                        <depend id="138" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="事件监测和分析界面"/>
+                    </task>
+                    <task id="138" name="紧急响应功能" color="#8cb6ce" meeting="false" start="2024-02-20" duration="4" complete="0" expand="true">
+                        <depend id="139" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="紧急响应界面"/>
+                    </task>
+                    <task id="139" name="通信和协调功能" color="#8cb6ce" meeting="false" start="2024-02-24" duration="4" complete="0" expand="true">
+                        <depend id="267" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="通信和协调界面"/>
+                    </task>
+                </task>
+            </task>
+            <task id="261" name="测试" meeting="false" start="2023-12-16" duration="89" complete="0" expand="true">
+                <task id="262" name="形象进度管理模块" color="#8cb6ce" meeting="false" start="2023-12-16" duration="16" complete="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="形象进度管理模块测试报告"/>
+                </task>
+                <task id="263" name="特种装备监测与作业风险预警模块" color="#8cb6ce" meeting="false" start="2024-01-01" duration="9" complete="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="特种装备监测与作业风险预警模块测试报告"/>
+                </task>
+                <task id="264" name="绿色工地模块" color="#8cb6ce" meeting="false" start="2024-01-10" duration="19" complete="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="绿色工地模块测试报告"/>
+                </task>
+                <task id="265" name="安全质量管理模块" color="#8cb6ce" meeting="false" start="2024-01-29" duration="14" complete="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="安全质量管理模块测试报告"/>
+                </task>
+                <task id="266" name="工程态势分析模块" color="#8cb6ce" meeting="false" start="2024-02-12" duration="16" complete="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="工程态势分析模块测试报告"/>
+                </task>
+                <task id="267" name="7*24小时预警处置中心模块" color="#8cb6ce" meeting="false" start="2024-02-28" duration="15" complete="0" expand="true">
+                    <depend id="282" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="7*24小时预警处置中心模块测试报告"/>
+                </task>
+            </task>
+            <task id="281" name="部署" meeting="false" start="2024-03-14" duration="15" complete="0" expand="true">
+                <task id="282" name="部署智慧工地平台" color="#8cb6ce" meeting="false" start="2024-03-14" duration="15" complete="0" expand="true">
+                    <depend id="284" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="智慧工地平台"/>
+                </task>
+                <task id="284" name="后期维护" color="#8cb6ce" meeting="true" start="2024-03-29" duration="0" complete="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="维护日志"/>
+                </task>
+            </task>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="6" name="项目负责人" function="Default:1" contacts="" phone=""/>
+        <resource id="13" name="前后端工程师" function="7" contacts="" phone=""/>
+        <resource id="14" name="测试工程师" function="8" contacts="" phone=""/>
+        <resource id="15" name="运维工程师" function="9" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="11" resource-id="6" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="6" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="6" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="6" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="108" resource-id="6" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="113" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="114" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="115" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="116" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="118" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="119" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="120" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="121" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="123" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="124" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="125" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="127" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="128" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="129" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="130" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="132" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="133" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="134" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="136" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="137" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="138" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="139" resource-id="13" function="7" responsible="true" load="100.0"/>
+        <allocation task-id="262" resource-id="14" function="8" responsible="true" load="100.0"/>
+        <allocation task-id="263" resource-id="14" function="8" responsible="true" load="100.0"/>
+        <allocation task-id="264" resource-id="14" function="8" responsible="true" load="100.0"/>
+        <allocation task-id="265" resource-id="14" function="8" responsible="true" load="100.0"/>
+        <allocation task-id="266" resource-id="14" function="8" responsible="true" load="100.0"/>
+        <allocation task-id="267" resource-id="14" function="8" responsible="true" load="100.0"/>
+        <allocation task-id="282" resource-id="15" function="9" responsible="true" load="100.0"/>
+        <allocation task-id="284" resource-id="15" function="9" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <taskdisplaycolumns>
+        <displaycolumn property-id="tpd11" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd1" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd9" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd8" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd7" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd10" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd0" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd2" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpc1" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd3" order="0" width="213" visible="true"/>
+        <displaycolumn property-id="tpc0" order="1" width="136" visible="true"/>
+        <displaycolumn property-id="tpd6" order="2" width="79" visible="true"/>
+        <displaycolumn property-id="tpd4" order="3" width="126" visible="true"/>
+        <displaycolumn property-id="tpd5" order="4" width="128" visible="true"/>
+    </taskdisplaycolumns>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="特种模块管理员"/>
+        <role id="2" name="绿色工地管理员"/>
+        <role id="3" name="安全质量管理员"/>
+        <role id="4" name="工程态势分析管理员"/>
+        <role id="5" name="预警处置中心管理员"/>
+        <role id="6" name="形象进度管理员"/>
+        <role id="7" name="前后端工程师"/>
+        <role id="8" name="测试工程师"/>
+        <role id="9" name="运维工程师"/>
+    </roles>
+</project>
